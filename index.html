@@ -1,7 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta property="og:url" content="url-cont..."/>
+	<meta property="og:type" content="article.." />
+	<meta property="og:title" content="myTitle.." />
+	<meta property="og:description" content="describe..." />
+	<meta property="og:image" content="img..." />
+	<meta name="description" content="Web">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="author" content="jekk18">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>asd</title>
 	<link rel="stylesheet"  href="styles/style.css">
 	<link rel="stylesheet"  href="styles/reset.css">
@@ -69,10 +79,12 @@
 			<img class="img-mobile-body" src="img/avatar01.png" alt="avatar img">
 		</div>
 	</header>
-	<section class="more-news">
-		<div class="news">
+	<section class="more-new" >
+		<div class="news" id="section">
 			<div class="left-cont">
-				<div class="img"><img src="img/image1.png" alt="img"></div>
+				<div class="img">
+					<img class="img-news" src="img/image1.png" alt="img">
+				</div>
 				<div class="background-image">
 					<div class="text-container">
 						<div class="text">
@@ -194,7 +206,7 @@
 		</div>
 	</section>
 	<section class="happening-sec">
-		<div class="big-cont">
+		<div class="big-cont" >
 			<div class="gal-box">
 				<h1 class="gal-title">HAPPENING NOW</h1>
 				<div class="arrow">
@@ -347,13 +359,7 @@
 		</div>
 	</footer>
 
-	<script type="text/javascript">
-		function burgerClick(){
-			var elem = document.getElementById("mob-nav");
-			var burgElem = document.getElementById("burger");
-			burgElem.classList.toggle("open");
-			elem.classList.toggle("open");
-		} 
+	<script type="text/javascript" src="js/script.js">
 	</script>
 </body>
 </html>

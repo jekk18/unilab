@@ -1,7 +1,9 @@
  @import url('http://fonts.cdnfonts.com/css/helvetica-255');
  @import url('http://fonts.cdnfonts.com/css/acumin-pro');
 
-                
+ .close{
+ 	transform: translateX(-150%);
+ }               
                 
 body{
 	padding: 0;
@@ -113,6 +115,7 @@ nav ul{
 	position: relative;
 	top: 0;
 	left: 0;
+	transition: 0.3s ease;
 }
 
 /*left container*/
@@ -589,20 +592,25 @@ input::placeholder{
 		flex-direction: column;
 	}
 	.img{
-		display: none;
+		width: 100%;
+		height: 100%
+	}
+	.img-news{
+		width: 100%;
+		height: 100%;
 	}
 	.left-cont{
 		width: 100%;
 		height: 400px;
 	}
-	.background-image{
+	/*.background-image{
 		background-image: url("../img/image8.png");
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;	
 		width: 100%;
 		height: 100%;
-	}
+	}*/
 	.text-container{
 		width: 608px;
     	height: 239px;
@@ -809,15 +817,13 @@ input::placeholder{
 
 @media screen and (max-width: 376px){
 	.body{
-		overflow-x: hidden;
-		width: 376px;
-		height: 100%;
+		max-width: 375px;
 	}
 	.head{
 		display: none;
 	}
 	header{
-		width: 376px;
+		width: 100%;
 		height: 88px;
 		display: flex;
 		flex-direction: column;
@@ -924,7 +930,7 @@ input::placeholder{
 		height: 16px;
 	}
 	.more-news{
-		width: 376px;
+		width: 100%;
 		height: 866px;
 	}
 	.news{
@@ -932,9 +938,12 @@ input::placeholder{
 		height: 100%;
 	}
 	.left-cont{
-		width: 376px;
+		width: 100%;
     	height: 388px;
 	}
+	./*img{
+		display: block;
+	}*/
 	.background-image{
 		width: 100%;
 		height: 100%;
@@ -964,12 +973,11 @@ input::placeholder{
 		display: none;
 	}
 	.right-cont{
-		width: 375px;
-		height: 478px;
+		width: 100%;
+		/*height: 478px;*/
 	}
 	.title_container{
 		width: 327px;
-		height: 60px;
 	}
 	.info_box{
 		height: 298px;
@@ -996,30 +1004,31 @@ input::placeholder{
 	}
 
 	.gallery_information{
-		width: 376px;
+		width: 100%;
 		height: 716px;
 	}
 	.gallery{
 		width: 327px;
-		height: 716px;
+		height: 100%;
 	}
 	.gal-container{
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 	}
 	.inf-box{
-		width: 327px;
+		width: 100%;
 		height: 308px;
 	}
 	.inf-box:nth-child(1){
 		margin-bottom: 40px;
 	}
 	.gal-img{
+		width: 100%;
 		height: 154px!important;
 	}
-
 	.happening-sec{
-		width: 376px;
+		width: 100%;
 	}
 	.big-cont{
 		width: 327px;
@@ -1028,7 +1037,7 @@ input::placeholder{
 		width: 100%;
 	}
 	.ga-left-cont{
-		width: 327px;
+		width: 100%;
 		height: 100%;
 	}
 	.left-img-box-top{
@@ -1038,6 +1047,13 @@ input::placeholder{
 	.left-cont-context{
 		width: 279px;
 		height: 144px;
+		position: absolute;
+		left: 25px;
+	}
+	.left-city-title{
+		position: absolute;
+		top: 25px;
+		left: 25px;
 	}
 	.in-span-secret{
 		display: none;
@@ -1057,7 +1073,7 @@ input::placeholder{
 		opacity: 1;
 	}
 	.ga-right-cont{
-		width: 376px;
+		width: 100%;
 		flex-direction: column;
 	}
 	.right-box{
