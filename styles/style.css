@@ -585,7 +585,8 @@ input::placeholder{
 		height: 400px;
 	}
 	.background-image{
-		background-image: url(../img/image8.png);
+		background-image: url(
+"../img/image8.png");
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;	
