@@ -5,6 +5,4 @@ function burgerClick(){
 	burgElem.classList.toggle("open");
 	elem.classList.toggle("open");
 	clasTag.classList.toggle("close");
-
-
 } 
